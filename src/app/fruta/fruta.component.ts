@@ -52,7 +52,7 @@ export class FrutaComponent{
     }
 
     holaMundo(nombre){
-        alert('Hola mundo!!' + nombre);
+        //alert('Hola mundo!!' + nombre);
     }
 
     cambiarNombre(){
