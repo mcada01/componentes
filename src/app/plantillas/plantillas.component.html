@@ -1,3 +1,31 @@
+<h4>Propiedades input en Angular</h4>
+<!--<componente-hijo 
+    [propiedad_uno]="'Valor de la propiedad uno'" 
+    [texto]="'Valor de la propiedad dos'">
+</componente-hijo>-->
+
+<componente-hijo 
+    [propiedad_uno]="dato_externo" 
+    [texto]="identity">
+    (desde_el_hijo)="recibirDatos($event)"
+</componente-hijo>
+
+<div *ngIf="datos_del_hijo">
+    <h1>{{datos_del_hijo.nombre}}</h1>
+    <h1>{{datos_del_hijo.web}}</h1>
+    <h1>{{datos_del_hijo.face}}</h1>
+</div>
+
+<hr/>
+
+
+
+
+
+
+
+
+
 <h4>{{titulo}}</h4>
 
 <!--If - else de forma tradicional-->
